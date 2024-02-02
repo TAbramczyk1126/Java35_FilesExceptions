@@ -12,6 +12,11 @@ public class ReadData {
         File file = new File("C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt");
         Paths.get("C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt");
 
-        System.out.println(Files.readString(file.toPath()));
+        try {
+            System.out.println(Files.readString(file.toPath()));
+        } catch (IOException e) {
+            System.out.println("There was an error while reading file: " + e.getMessage());
+        }
+        System.out.println("End program");
     }
 }
