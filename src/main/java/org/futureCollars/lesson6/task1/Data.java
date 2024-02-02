@@ -19,7 +19,6 @@ public class Data {
         writeToFile(file, "Pliki");
         writeToFile(file, "Koniec pliku");
 
-        System.out.println(Files.readString(file.toPath()));
     }
 
     public static void writeToFile(File file, String text) throws IOException {
