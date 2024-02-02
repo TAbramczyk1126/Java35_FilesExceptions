@@ -23,9 +23,9 @@ public class Data {
     }
 
     public static void writeToFile(File file, String text) throws IOException {
+
         String currentText = Files.readString(file.toPath());
         String newText = currentText + text + System.lineSeparator();
         Files.writeString(file.toPath(), newText);
-        currentText = newText;
     }
 }
