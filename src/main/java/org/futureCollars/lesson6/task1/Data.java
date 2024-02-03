@@ -9,7 +9,6 @@ public class Data {
     public static void main(String[] args) throws IOException {
 
         File file = new File("C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt");
-        Paths.get("C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt");
 
         writeToFile(file, "Kurs");
         writeToFile(file, "Java");
