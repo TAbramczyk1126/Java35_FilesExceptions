@@ -9,7 +9,7 @@ public class ReadDataEvery2Line {
 
     public static void main(String[] args) {
 
-    File file = new File("C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt");
+        File file = new File("C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt");
 
         try {
             FileReader fileReader = new FileReader(file);

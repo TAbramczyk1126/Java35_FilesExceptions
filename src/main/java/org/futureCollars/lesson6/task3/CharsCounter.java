@@ -8,7 +8,7 @@ import java.nio.file.Path;
 
 public class CharsCounter {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         File file = new File("C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt");
 

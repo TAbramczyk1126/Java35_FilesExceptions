@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 
 public class ReadData {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         Path filePath = Paths.get("C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt");
 

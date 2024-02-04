@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class SearchWord {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         File file = new File("C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt");
         String filePath = "C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt";
@@ -16,7 +16,7 @@ public class SearchWord {
 
     }
 
-    public static void findSearchedWord(String filePath, String searchedWord) throws IOException {
+    public static void findSearchedWord(String filePath, String searchedWord) {
         System.out.println(filePath);
 
         try {
