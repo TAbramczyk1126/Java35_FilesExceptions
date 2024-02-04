@@ -13,7 +13,6 @@ public class ChangeToUpperCase {
         String outputFilePath = "C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\output.txt";
 
         convertToUpperCaseAndSave(inputFilePath, outputFilePath);
-
     }
 
     public static void convertToUpperCaseAndSave(String inputFilePath, String outputFilePath) {
