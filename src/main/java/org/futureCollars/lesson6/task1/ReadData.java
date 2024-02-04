@@ -13,7 +13,8 @@ public class ReadData {
 
         try {
             System.out.println(Files.readString(filePath));
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             System.out.println("There was an error while reading file: " + e.getMessage());
         }
         System.out.println("End program");
