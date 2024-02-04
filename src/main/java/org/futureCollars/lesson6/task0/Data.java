@@ -1,9 +1,8 @@
-package org.futureCollars.lesson6.task1;
+package org.futureCollars.lesson6.task0;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Paths;
 
 public class Data {
     public static void main(String[] args) throws IOException {

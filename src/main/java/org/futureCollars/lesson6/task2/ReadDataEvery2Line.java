@@ -1,9 +1,8 @@
-package org.futureCollars.lesson6.task1;
+package org.futureCollars.lesson6.task2;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.nio.file.Paths;
 import java.io.IOException;
 
 public class ReadDataEvery2Line {
