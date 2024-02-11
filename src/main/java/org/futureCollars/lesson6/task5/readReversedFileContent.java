@@ -5,16 +5,20 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Stack;
 
-public class ReverseFileReader {
+public class readReversedFileContent {
+
+    private static Stack<String> lines = new Stack<>();
 
     public static void main(String[] args) {
-        ReverseFileReader reader = new ReverseFileReader();
-        reader.readAndDislplayReversed("C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt");
+        ReadReversedFileContent("C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt");
     }
 
-    public void readAndDislplayReversed(String fileName) {
-        Stack<String> lines = new Stack<>();
+    public static void ReadReversedFileContent(String fileName) {
+        readAndPushLines(fileName);
+        displayReversedLines();
+    }
 
+    private static void readAndPushLines(String fileName) {
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName))) {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
@@ -22,9 +26,10 @@ public class ReverseFileReader {
             }
         } catch (IOException e) {
             e.printStackTrace();
-            return;
         }
+    }
 
+    private static void displayReversedLines() {
         while (!lines.isEmpty()) {
             System.out.println(lines.pop());
         }
