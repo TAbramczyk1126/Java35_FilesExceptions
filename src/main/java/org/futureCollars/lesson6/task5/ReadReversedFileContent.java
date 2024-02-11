@@ -5,15 +5,15 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Stack;
 
-public class readReversedFileContent {
+public class ReadReversedFileContent {
 
     private static Stack<String> lines = new Stack<>();
 
     public static void main(String[] args) {
-        ReadReversedFileContent("C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt");
+        readReversedFileContent("C:\\Tomek\\JAVA\\Java35_FilesExceptions\\src\\main\\resources\\data.txt");
     }
 
-    public static void ReadReversedFileContent(String fileName) {
+    public static void readReversedFileContent(String fileName) {
         readAndPushLines(fileName);
         displayReversedLines();
     }
